@@ -45,14 +45,14 @@ subclass.
 
 ::diagram::
 ```mermaid {scale: 1.3}
-flowchart TD
-  root[Notifier]
-  sms[SMS Notifier]
-  facebook[Facebook Notifier]
-  slack[Slack Notifier]
-  root --> sms
-  root --> facebook
-  root --> slack
+classDiagram
+    class SmsNotifier["SMS Notifier"]
+    class FacebookNotifier["Facebook Notifier"]
+    class SlackNotifier["Slack Notifier"]
+
+    Notifier <|-- SmsNotifier
+    Notifier <|-- FacebookNotifier
+    Notifier <|-- SlackNotifier
 ```
 
 ::footer::
@@ -83,13 +83,13 @@ classDiagram
     class FacebookSlackNotifier
     class SMSFacebookSlackNotifier
 
-    Notifier <-- SMSNotifier
-    Notifier <-- SMSFacebookNotifier
-    Notifier <-- SMSSlackNotifier
-    Notifier <-- SMSFacebookSlackNotifier
-    Notifier <-- FacebookNotifier
-    Notifier <-- FacebookSlackNotifier
-    Notifier <-- SlackNotifier
+    Notifier <|-- SMSNotifier
+    Notifier <|-- SMSFacebookNotifier
+    Notifier <|-- SMSSlackNotifier
+    Notifier <|-- SMSFacebookSlackNotifier
+    Notifier <|-- FacebookNotifier
+    Notifier <|-- FacebookSlackNotifier
+    Notifier <|-- SlackNotifier
 ```
 
 ::footer::
