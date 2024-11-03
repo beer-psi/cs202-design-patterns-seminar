@@ -164,6 +164,67 @@ classDiagram
 ```
 
 ---
+
+```cpp
+class LightsController {
+public:
+    void turnOn() {
+        std::cout << "Lights are ON\n";
+    }
+    void turnOff() {
+        std::cout << "Lights are OFF\n";
+    }
+}
+
+class SecuritySystem {
+public:
+    void activate() {
+        std::cout << "Security system is ACTIVATED\n";
+    }
+    void deactivate() {
+        std::cout << "Security system is DEACTIVATED\n";
+    }
+}
+
+class HeatingSystem {
+public:
+    void setTemperature(int temperature) {
+        std::cout << "Heating system set to " << temperature << " degrees\n";
+    }
+}
+```
+
+---
+
+```cpp
+class HomeAutomationFacade {
+    LightsController lights_;
+    SecuritySystem security_;
+    HeatingSystem heating_;
+public:
+    void onLeaveHome() {
+        lights_.turnOff();
+        security_.activate();        
+    }
+    void onEnterHome() {
+        lights_.turnOn();
+        security_.deactivate();
+        heating_.setTemperature(22);
+    }
+}
+
+int main() {
+    HomeAutomationFacade facade;
+    std::cout << "Leaving home...\n";
+    facade.onLeaveHome();
+    std::cout << "-------------------------\n";
+    std::cout << "Entering home...\n";
+    facade.onEnterHome();
+    return 0;
+}
+```
+
+---
 layout: "BetterTwoColsHeader"
 ---
 
