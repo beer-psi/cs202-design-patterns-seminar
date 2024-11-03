@@ -60,7 +60,7 @@ hideInToc: true
 
   <div>
     <h3>Vày Thượng Gia Lạc</h3>
-    <p>Slides</p>
+    <p>Supporting materials</p>
   </div>
 </div>
 

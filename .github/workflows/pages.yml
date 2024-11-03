@@ -20,7 +20,7 @@ jobs:
           run_install: true
 
       - name: "Build slides"
-        run: "pnpm build --base /cs202-design-patterns-seminar"
+        run: "pnpm build --base /cs202-design-patterns-seminar --download"
 
       - name: Fix permissions
         run: |
