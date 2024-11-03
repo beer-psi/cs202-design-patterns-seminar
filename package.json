@@ -14,5 +14,8 @@
     "slidev-theme-dracula": "^0.2.0",
     "styled-qr-code": "^1.0.0",
     "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.48.2"
   }
 }
