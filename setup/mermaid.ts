@@ -4,7 +4,7 @@ export default defineMermaidSetup(() => ({
     theme: "dark",
     themeVariables: {
         fontFamily: "Nunito Sans",
-        fontSize: "15px",
+        fontSize: "14px",
     },
     class: {
         hideEmptyMembersBox: true,
