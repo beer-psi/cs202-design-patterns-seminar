@@ -1,6 +1,12 @@
 ---
 theme: "dracula"
 title: "Decorator and Facade patterns in Object-Oriented Programming"
+
+download: true
+exportFilename: "CS202-23TT1-Decorators and Facades.pdf"
+export:
+  dark: true
+
 class: "text-center"
 drawings:
   persist: false
@@ -66,12 +72,28 @@ hideInToc: true
 
 ---
 src: "./pages/decorators.md"
-hide: false
+---
+
+---
+src: "./pages/decorators-quiz-public.md"
+---
+
+---
+src: "./pages/decorators-quiz.md"
+disabled: true
 ---
 
 ---
 src: "./pages/facade.md"
-hide: false
+---
+
+---
+src: "./pages/facade-quiz-public.md"
+---
+
+---
+src: "./pages/facade-quiz.md"
+disabled: true
 ---
 
 ---
