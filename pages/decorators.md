@@ -378,11 +378,11 @@ app.use(logger())
 // Add authentication for any routes under /posts
 app.use("/posts/*", basicAuth())
 
-app.get("/", (c. => {
+app.get("/", (c) => {
   return c.text("Hello world!")
 })
 
-app.get("/posts", (c. => {
+app.get("/posts", (c) => {
   return c.text("You can't access this without authentication!")
 })
 
